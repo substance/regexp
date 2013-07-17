@@ -9,7 +9,7 @@ For the new [Substance.Surface](http://github.com/substance/surface)
 we had to implement a simple lookup method that scans for word boundaries
 in a paragraph (in order to find out where to jump when pressing `alt`+`right` in our text editor).
 
-So I came up with a simple regular expression.
+So we came up with a simple regular expression.
 
 ```js
 var wordBounds = /\b\w/g;
@@ -42,4 +42,4 @@ var nextBound = _.find(matches, function(m) {
 }).index;
 ```
 
-Easy. If you want to see it in action have a look at the brand-new `Substance.Document.Selection` API.
+Easy. If you want to see it in action have a look at the brand-new [Selection API](https://github.com/substance/document/blob/master/src/selection.js).
