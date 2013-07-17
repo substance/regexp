@@ -15,7 +15,7 @@ So we came up with a simple regular expression.
 var wordBounds = /\b\w/g;
 ```
 
-In order to get all matches of a regular expression on a string you have to call `RegExp.match` multiple times, which is quite error-prone and terrible to write.
+In order to get all matches of a regular expression on a string you have to call `RegExp.exec` multiple times, which is quite error-prone and terrible to write.
 
 ```js
 var str = "Fix problem quickly with galvanized jets";
