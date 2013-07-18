@@ -1,6 +1,6 @@
 # Substance RegExp
 
-This tiny library was created out of a frustion with the native API for
+This tiny library was created out of a frustration with the native API for
 regular expressions in Javascript.
 
 Here's why:
