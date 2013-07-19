@@ -52,14 +52,18 @@ RegExp.Prototype = function() {
 
   this.match = function(str) {
     if (str === undefined) throw new Error('No string given');
-    var matches = [];
+    
+    if (!this.exp.global) {
+      return this.exp.exec(str);
+    } else {
+      var matches = [];
+      // Reset the state of the expression
+      this.exp.compile(this.exp);
 
-    // Reset the state of the expression
-    this.exp.compile(this.exp);
-
-    // Execute until last match has been found
-    while ((match = this.exp.exec(str)) !== null) {
-      matches.push(new Match(match));
+      // Execute until last match has been found
+      while ((match = this.exp.exec(str)) !== null) {
+        matches.push(new Match(match));
+      }
     }
     return matches;
   }
