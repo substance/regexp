@@ -1,9 +1,4 @@
-(function(root) {
-
-// Imports
-// 
-
-var Substance = root.Substance || {};
+"use strict";
 
 // Substanc.RegExp.Match
 // ================
@@ -23,19 +18,19 @@ Match.Prototype = function() {
 
   // Returns the capture groups
   // --------
-  // 
+  //
 
   this.captures = function() {
     return this.match.slice(1);
-  },
+  };
 
   // Serialize to string
   // --------
-  // 
+  //
 
   this.toString = function() {
     return this.match[0];
-  }
+  };
 };
 
 Match.prototype = new Match.Prototype();
@@ -66,19 +61,15 @@ RegExp.Prototype = function() {
       }
     }
     return matches;
-  }
-}
+  };
+};
 
 RegExp.prototype = new RegExp.Prototype();
+
+RegExp.Match = Match;
+
 
 // Export
 // ========
 
-if (typeof exports !== 'undefined') {
-  module.exports = Selection;
-} else {
-  Substance.RegExp = RegExp;
-  Substance.RegExp.Match = Match;
-}
-
-})(this);
+module.exports = RegExp;
