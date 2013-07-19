@@ -52,15 +52,17 @@ RegExp.Prototype = function() {
       return this.exp.exec(str);
     } else {
       var matches = [];
+      var match;
       // Reset the state of the expression
       this.exp.compile(this.exp);
 
       // Execute until last match has been found
+
       while ((match = this.exp.exec(str)) !== null) {
         matches.push(new Match(match));
       }
+      return matches;
     }
-    return matches;
   };
 };
 
