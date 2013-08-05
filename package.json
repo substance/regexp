@@ -1,15 +1,21 @@
 {
   "name": "substance-regexp",
   "description": "Against frustration with native RegExps.",
-  "keywords": ["substance", "regular expression"],
+  "keywords": [
+    "substance",
+    "regular expression"
+  ],
   "author": "Michael Aufreiter",
-  "contributors": ["Oliver Buchtala"],
-  "version": "0.1.0-alpha",
+  "contributors": [
+    "Oliver Buchtala"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/substance/regexp.git"
   },
+  "version": "0.1.1",
   "engines": {
-    "node": ">=0.8.x"
+    "node": ">=0.8.x",
+    "npm": ">=1.1.x"
   }
 }
