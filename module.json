@@ -1,6 +1,6 @@
 {
   "name": "substance-regexp",
-  "description": "Against frustration with native RegExps.",
+  "description": "Against frustration with native RegExp's.",
   "keywords": ["substance", "regular expression"],
   "author": "Michael Aufreiter",
   "contributors": ["Oliver Buchtala"],
@@ -8,5 +8,5 @@
     "type": "git",
     "url": "https://github.com/substance/regexp.git"
   },
-  "version": "0.1.1"
+  "version": "0.1.0"
 }
