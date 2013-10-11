@@ -1,6 +1,6 @@
 {
   "name": "substance-regexp",
-  "description": "Against frustration with native RegExps.",
+  "description": "Against frustration with native RegExp's.",
   "keywords": [
     "substance",
     "regular expression"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "https://github.com/substance/regexp.git"
   },
-  "version": "0.1.1",
+  "version": "0.1.0",
   "engines": {
     "node": ">=0.8.x",
     "npm": ">=1.1.x"
